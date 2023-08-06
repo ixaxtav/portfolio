@@ -1,0 +1,18 @@
+---
+layout: layout.html
+---
+
+<div>
+  <p class="section-title">Projects</p>
+  <div class="projects">
+    {% for project in collections.project %}
+    <div class="project-column">
+      <a href="{{project.url}}">
+        <img class="projects-img" alt="{{project.data.title}}" src="{{project.data.image}}" />
+        <h2 class="project-text">{{ project.data.title }}</h2>
+        <p>{{ project.data.short_description}}</p>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
