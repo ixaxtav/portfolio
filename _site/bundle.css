@@ -232,6 +232,14 @@ footer {
   font-weight: 700;
   border-radius: 2.5px;
 }
+.badge-danger {
+  background-color: #9b2c2c;
+  color: #feb2b2;
+  padding: 0.25rem;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 2.5px;
+}
 
 .project-url {
   color: rgb(255, 99, 195);
