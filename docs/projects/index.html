@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello, world!</title>
+    <title>Ixax Tavarez | Full Stack Developer</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="/bundle.css" />
@@ -19,7 +19,8 @@
         </div>
         <div class="stack-row">
           <a id="about" class="nav-link" href="/">About</a>
-          <a id="project" class="nav-link" href="/projects">Projects</a>
+          <a id="works" class="nav-link" href="/works">Works</a>
+          <a id="projects" class="nav-link" href="/projects">Personal Projects</a>
         </div>
         <a class="nav-link" href="/assets/resume/resume.pdf">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="0.8em" width="0.8em" xmlns="http://www.w3.org/2000/svg">
@@ -31,24 +32,40 @@
         >
       </div>
     </nav>
-    <main class="container p-15">
+    <main class="container fade-in p-15">
 <div>
-  <p class="section-title">Projects</p>
+  <p class="section-title">Personal Projects</p>
   <div class="projects">
     
     <div class="project-column">
-      <a href="/projects/imrecruitable/">
-        <img class="projects-img" alt="ImRecruitable" src="/assets/images/imrecruitable/imrecruitable.png" />
-        <h2 class="project-text">ImRecruitable</h2>
-        <p>A web application that connects high school athletes with college coaches.</p>
+      <a href="/projects/tictactoe/">
+        <img class="projects-img" alt="Tic-Tac-Toe" src="/assets/images/tictactoe/tictactoe1.png" />
+        <h2 class="project-text">Tic-Tac-Toe</h2>
+        <p>A Tic Tac Toe app is a game where two players try to get three in a row on a grid.</p>
       </a>
     </div>
     
     <div class="project-column">
-      <a href="/projects/jobcore/">
-        <img class="projects-img" alt="JobCore" src="/assets/images/jobcore/emp-calendar.png" />
-        <h2 class="project-text">JobCore</h2>
-        <p>Schedule and manage shifts easily.</p>
+      <a href="/projects/todo-list/">
+        <img class="projects-img" alt="Todo List" src="/assets/images/todo-list/todo-list.png" />
+        <h2 class="project-text">Todo List</h2>
+        <p>This app is a simple todo list application built with React.</p>
+      </a>
+    </div>
+    
+    <div class="project-column">
+      <a href="/projects/bmi-calculator/">
+        <img class="projects-img" alt="BMI Calculator" src="/assets/images/bmi-calculator/bmi-calculator.png" />
+        <h2 class="project-text">BMI Calculator</h2>
+        <p>This is the code for a simple BMI (Body Mass Index) calculator using HTML and jQuery.</p>
+      </a>
+    </div>
+    
+    <div class="project-column">
+      <a href="/projects/task-management/">
+        <img class="projects-img" alt="Task Management App" src="/assets/images/task-management-app/task-management-app.png" />
+        <h2 class="project-text">Task Management App</h2>
+        <p>Simple Task Management App</p>
       </a>
     </div>
     
@@ -61,8 +78,10 @@
 
       if (url === "/") {
         document.getElementById("about").classList.add("active");
+      } else if (url.includes("works")) {
+        document.getElementById("works").classList.add("active");
       } else if (url.includes("projects")) {
-        document.getElementById("project").classList.add("active");
+        document.getElementById("projects").classList.add("active");
       }
     </script>
   </body>

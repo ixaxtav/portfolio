@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello, world!</title>
+    <title>Ixax Tavarez | Full Stack Developer</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="/bundle.css" />
@@ -19,7 +19,8 @@
         </div>
         <div class="stack-row">
           <a id="about" class="nav-link" href="/">About</a>
-          <a id="project" class="nav-link" href="/projects">Projects</a>
+          <a id="works" class="nav-link" href="/works">Works</a>
+          <a id="projects" class="nav-link" href="/projects">Personal Projects</a>
         </div>
         <a class="nav-link" href="/assets/resume/resume.pdf">
           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="0.8em" width="0.8em" xmlns="http://www.w3.org/2000/svg">
@@ -31,7 +32,7 @@
         >
       </div>
     </nav>
-    <main class="container p-15">
+    <main class="container fade-in p-15">
 <div>
   <div style="display: flex; justify-content: space-between">
     <div>
@@ -125,8 +126,10 @@
 
       if (url === "/") {
         document.getElementById("about").classList.add("active");
+      } else if (url.includes("works")) {
+        document.getElementById("works").classList.add("active");
       } else if (url.includes("projects")) {
-        document.getElementById("project").classList.add("active");
+        document.getElementById("projects").classList.add("active");
       }
     </script>
   </body>

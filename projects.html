@@ -3,9 +3,9 @@ layout: layout.html
 ---
 
 <div>
-  <p class="section-title">Projects</p>
+  <p class="section-title">Personal Projects</p>
   <div class="projects">
-    {% for project in collections.project %}
+    {% for project in collections.projects %}
     <div class="project-column">
       <a href="{{project.url}}">
         <img class="projects-img" alt="{{project.data.title}}" src="{{project.data.image}}" />
