@@ -5,7 +5,7 @@ layout: layout.html
 <div>
   <p class="section-title">Personal Projects</p>
   <div class="projects">
-    {% for project in collections.projects %}
+    {% assign sortedProjects = collections.projects | sort: 'date' | reverse %} {% for project in sortedProjects %}
     <div class="project-column">
       <a href="{{project.url}}">
         <img class="projects-img" alt="{{project.data.title}}" src="{{project.data.image}}" />
